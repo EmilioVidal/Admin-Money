@@ -1,0 +1,95 @@
+body #body{
+    background-color: var(--primBack);
+    font-family: "Inter", serif;
+}
+
+#signMain-reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#signPrinc-reg{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    width: 50%;
+}
+
+#signPrinc-reg p{
+    color:var(--azulPrinc);
+    font-size: var(--m);
+    margin: 0px 0px 40px 0px; 
+    font-weight: bolder;
+}
+
+#signPrinc-reg button, input{
+    width: 400px;
+    margin: 10px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Inter", serif;
+}
+
+.basic-info-reg{
+    background-color: #97BDD3;
+    color: #7E7E7E;
+    font-family: "Inter", serif;
+    font-size: var(--s);
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#cont-btn-reg{
+    text-align: center;
+    background-color: var(--ama);
+    color: var(--amaF);
+    font-weight: bolder;
+    font-size: var(--m);
+}
+
+#cont-btn-reg:hover{
+    cursor: pointer;
+    background-color: var(--amaF);
+    color: var(--ama);
+}
+
+@media (max-width:1050px){
+    #signPrinc-reg{
+        background-color: var(--azulPrinc);
+        border-radius: 20px;
+        width: 60%;
+        height: 450px;
+        justify-content: center;
+    }
+
+    #signPrinc-reg p{
+        color: #01111A;
+        font-size: var(--m);
+        margin: 0;
+        padding: 10px 0px 10px 0px;
+        }
+
+    #signPrinc-reg button, input{
+        width: 100%;
+        height: 40px;
+    }
+
+    .basic-info-reg{
+        font-size: var(--s);
+        align-content: center;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    #cont-btn-reg{
+        font-size: var(--s);
+    }
+
+}

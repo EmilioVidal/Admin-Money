@@ -1,0 +1,180 @@
+/* Estilo para que cubra toda la pantalla */
+*{
+    margin: 0;
+}
+#bodyP {
+    background-color: var(--primBack);
+    font-family: "Inter", serif;
+    width: 100vw; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+#bannerP {
+    background-color: var(--azulPrinc);
+    width: 100%; 
+    height: 350px; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 1fr; 
+    border-radius: 0px 0px 10px 10px;
+}
+
+#texto-banner{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo-banner, #periodo-banner{
+    font-size: 4.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#titulo-banner{
+    color: var(--azulC);
+}
+
+#periodo-banner{
+    color: var(--azulM);
+}
+
+#periodo-banner:hover{
+    color: var(--azulF);
+    cursor: pointer;
+}
+
+#balanceP{
+    color: var(--dorado);
+    font-size: var(--xxl);
+    font-weight: bolder;
+    padding: 10px;
+}
+
+#pp-banner{
+    justify-self: flex-end;
+    padding: 10px;
+    width: 10%;
+}
+
+#pp-banner:hover{
+    cursor: pointer;
+}
+
+#main-infoP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#paginasP{
+    background-color: var(--azulM);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    border-radius: 0 0 10px 10px;
+    width: 50%;
+    height: 50px;
+    justify-self: center;
+    align-items: center;
+}
+
+#paginasP p{
+    text-align: center;
+    color: white;
+    border-right: 2px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: var(--m);
+}
+
+#paginasP p:last-child {
+    border-right: none;
+}
+
+#historialP{
+    padding: 20px;
+    color: var(--azulC);
+    font-weight: bolder;
+    font-size: var(--xl);
+}
+
+#hostorialMenu{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 1fr; 
+    width: 100%;
+    flex-grow: 1;
+}
+
+#gastosP{
+    background-color: var(--secBack);
+    width: 70%;
+    height: 50px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+    
+
+}
+
+#mas-btn{
+    background: none; 
+    border: none; 
+    outline: none; 
+    padding: 0; 
+}
+
+#btn-img{
+    padding: 0; 
+    cursor: pointer; 
+}
+
+@media (max-width: 1050px) {
+
+    #bannerP{
+        height: 300px;
+        border-radius: 0 0 20px 20px;
+        grid-template-columns: 1fr 9fr 1fr; 
+    }
+
+    #titulo-banner{
+        padding-top: 20px;
+    }
+
+    #titulo-banner, #periodo-banner{
+        font-size: 2.8rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #balanceP{
+        font-size: var(--l);
+    }
+
+    #pp-banner{
+        width: 70%;
+    }
+    #paginasP{
+        width: 85%;
+        height: 40px;
+    }
+
+    #paginasP p{
+        font-size: 1.3rem
+    }
+
+    #historialP{
+        font-size: var(--l);
+    }
+}

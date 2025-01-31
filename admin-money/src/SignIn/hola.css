@@ -1,0 +1,120 @@
+body #body{
+    background-color: var(--primBack);
+    font-family: "Inter", serif;
+}
+
+#signMain-hola{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#signPrinc-hola{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    width: 50%;
+}
+
+#signPrinc-hola p{
+    color:var(--azulPrinc);
+}
+
+#signPrinc-hola #titulo-hola{
+    font-size: var(--m);
+    margin: 0px 0px 20px 0px; 
+    font-weight: bolder;
+}
+
+#signPrinc-hola #texto-hola{
+    font-size: var(--s);
+    margin: 0px;
+}
+
+#signPrinc-hola #correo-hola{
+    font-size: var(--s);
+    margin: 0px 0px 10px 0px;
+}
+
+#signPrinc-hola button, input{
+    width: 400px;
+    margin: 10px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Inter", serif;
+}
+
+#correo-inp-hola{
+    background-color: #97BDD3;
+    color: #7E7E7E;
+    font-family: "Inter", serif;
+    font-size: var(--s);
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#cont-btn-hola{
+    text-align: center;
+    background-color: var(--ama);
+    color: var(--amaF);
+    font-weight: bolder;
+    font-size: var(--m)
+}
+
+#cont-btn-hola:hover{
+    cursor: pointer;
+    background-color: var(--amaF);
+    color: var(--ama);
+}
+
+@media (max-width:1050px){
+    #signPrinc-hola{
+        background-color: var(--azulPrinc);
+        border-radius: 20px;
+        width: 60%;
+        height: 200px;
+        justify-content: center;
+    }
+
+    #signPrinc-hola #titulo-hola{
+        color: #01111A;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 10px 0px 10px 0px;
+        }
+
+    #signPrinc-hola #texto-hola{
+        font-size: 0.8rem;
+        color: #01111A;
+        text-align: center;
+    }
+
+    #signPrinc-hola #correo-hola{
+        color: #0D2F43;
+        font-size: 0.8rem;
+    }
+    
+
+    #signPrinc-hola button, input{
+        width: 100%;
+        height: 40px;
+    }
+
+    #correo-inp-hola{
+        font-size: var(--s);
+        align-content: center;
+        padding: 0%;
+        text-align: center;
+    }
+
+    #cont-btn-hola{
+        font-size: var(--s);
+    }
+
+}

@@ -1,0 +1,110 @@
+body #body{
+    background-color: var(--primBack);
+    font-family: "Inter", serif;
+}
+
+#signMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#signPrinc{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    width: 50%;
+}
+
+#signPrinc p{
+    color:var(--azulPrinc);
+    font-size: var(--m);
+    margin: 0px 0px 40px 0px; 
+    font-weight: bolder;
+}
+
+#signPrinc button, input{
+    width: 400px;
+    margin: 10px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Inter", serif;
+}
+
+#correo-inp{
+    background-color: #97BDD3;
+    color: #7E7E7E;
+    font-family: "Inter", serif;
+    font-size: var(--s);
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#cont-btn{
+    text-align: center;
+    background-color: var(--ama);
+    color: var(--amaF);
+    font-weight: bolder;
+    font-size: var(--m)
+}
+
+#cont-btn:hover{
+    cursor: pointer;
+    background-color: var(--amaF);
+    color: var(--ama);
+}
+
+#registro{
+    display: flex;
+    color: #EBB879;
+}
+
+#registro #cuenta{
+    padding-right: 5px;
+    color:var(--ama);
+}
+
+#registro #reg:hover{
+    color:var(--ama);
+    cursor: pointer;
+}
+
+@media (max-width:1050px){
+    #signPrinc{
+        background-color: var(--azulPrinc);
+        border-radius: 20px;
+        width: 60%;
+        height: 200px;
+        justify-content: center;
+    }
+
+    #signPrinc p{
+        color: #01111A;
+        font-size: var(--m);
+        margin: 0;
+        padding: 10px 0px 10px 0px;
+        }
+
+    #signPrinc button, input{
+        width: 100%;
+        height: 40px;
+    }
+
+    #correo-inp{
+        font-size: var(--s);
+        align-content: center;
+        padding: 0%;
+        text-align: center;
+    }
+
+    #cont-btn{
+        font-size: var(--s);
+    }
+
+}
